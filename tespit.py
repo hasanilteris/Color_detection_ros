@@ -8,8 +8,7 @@ from detecto.utils import filter_top_predictions
 
 class Detector(object):
     def __init__(self):
-        self._model = Model()
-        
+        self._model = Model()  
     def predict(self, img):
         return self._model.predict(img)
     
@@ -30,8 +29,7 @@ class DetectorNode(object):
         self._camera = camera
         self._detector = detector
         self._rate = rospy.Rate(5)
-        self._score_threshold = threshold
-        
+        self._score_threshold = threshold       
     def run(self):
         while not rospy.is_shutdown():
             frame = self._camera.get_frame()
