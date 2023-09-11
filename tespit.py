@@ -49,7 +49,6 @@ class DetectorNode(object):
 
 camera = Webcam()
 detector = Detector()
-
 node = DetectorNode("detector_node", camera, detector, 0.85)
 
 node.run()
