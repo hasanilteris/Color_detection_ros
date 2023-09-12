@@ -5,6 +5,7 @@ import cv2
 from detecto.core import Model
 from detecto.utils import filter_top_predictions
 
+
 class Detector(object):
     def __init__(self):
         self._model = Model()  
