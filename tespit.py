@@ -10,7 +10,8 @@ class Detector(object):
         self._model = Model()  
     def predict(self, img):
         return self._model.predict(img)
-    
+
+
 class Webcam(object):
     def __init__(self):
         self._device = cv2.VideoCapture(2)   
